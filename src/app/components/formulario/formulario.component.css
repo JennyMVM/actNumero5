@@ -1,0 +1,25 @@
+input,button {
+display: block;
+width: 100%;
+padding: 10px;
+}
+.formulario {
+    padding: 0px 30px;
+}
+
+
+button {
+    background-color: blue; /* Fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondos */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor de puntero */
+  }
+  
+  button:hover {
+    background-color: darkblue;
+  }
+
+  

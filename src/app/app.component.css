@@ -1,0 +1,17 @@
+.flex {
+    display: flex;
+    flex-direction: column;
+
+}
+aside, section {
+    width: 100%;
+}
+@media (min-width: 1000px) {
+    .flex {
+        flex-direction: row;
+    }
+}
+
+body {
+    font-family: Arial; 
+  }

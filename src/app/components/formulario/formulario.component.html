@@ -1,0 +1,31 @@
+<div class="formulario">
+    <div>
+        <label for ="titulo1">Titulo de la Noticia</label>
+        <input type="text" placeholder="Titulo de la noticia" [(ngModel)]="newContacto.titulo1">    
+    </div>
+
+    <div>
+        <label for ="fecha">Fecha</label>
+        <input type="text" placeholder="Fecha"[(ngModel)]="newContacto.fecha">    
+    </div>
+
+    <div>
+        <label for ="noticia">Noticia</label>
+        <input type="text" placeholder="Escribe la noticia"[(ngModel)]="newContacto.noticia">    
+    </div>
+
+<!-- src/app/upload-image/upload-image.component.html -->
+    <div>
+        <label for ="imagen1">Imagen</label>
+        
+        <input type="file"  value={formData.image} (change)="onFileSelected($event)" accept="image/*" [(ngModel)]="newContacto.imagen1">
+        <div *ngIf="selectedImage">
+            <h3>Preview:</h3>
+            <img [src]="selectedImage" alt="Selected Image" width="300">
+         </div>
+    </div>
+
+
+    <button (click)="getData()">Subir</button>
+
+</div>
